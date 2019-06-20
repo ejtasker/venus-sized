@@ -1,0 +1,17 @@
+{
+"manifest_version": 2,
+    "name": "Venus-sized",
+    "description": "Replaces 'Earth-sized' with 'Venus-sized' to remind you that size alone does not make a habitable world.",
+    "version": "1.0",
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_end"
+        }
+    ]
+}

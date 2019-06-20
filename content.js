@@ -8,7 +8,9 @@ for (var i = 0; i < elements.length; i++) {
 
         if (node.nodeType === 3) {
             var text = node.nodeValue;
-            var replacedText = text.replace(/Earth-sized/gi, 'Venus-sized');
+            var replacedText =
+              text.replace(/Earth-sized/gi, 'Venus-sized')
+              .replace(/Earth-like/gi, 'Venus-like');
 
             if (replacedText !== text) {
                 element.replaceChild(document.createTextNode(replacedText), node);
